@@ -148,7 +148,7 @@ async def contact(message: Message):
         "• описание задачи\n"
         "• идея\n"
         "• вопрос\n"
-        "• ссылка или фото",
+        "• ссылка на товар или фото",
         reply_markup=menu
     )
 
