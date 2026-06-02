@@ -240,15 +240,11 @@ async def order_receive(message: Message, state: FSMContext):
         print(f"[ORDER] No admin registered — skipping forward.")
 
     await message.answer(
-        "⚡ Запрос принят.
-
-Нейросети уже готовы к работе, а я готовлюсь смотреть на задачу не как алгоритм, а как человек, который ежедневно разбирает карточки товаров и их продажи.
-
-Скоро вернусь с обратной связью.
-",
-        reply_markup=menu
-    )
-
+    "⚡ Запрос принят.\n\n"
+    "Нейросети уже готовы к работе, а я готовлюсь смотреть на задачу не как алгоритм, а как человек, который ежедневно разбирает карточки товаров и их продажи.\n\n"
+    "Скоро вернусь с обратной связью.",
+    reply_markup=menu
+)
 
 async def main():
     print("DESIGN CONNECT bot is starting...")
